@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Info</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .flight-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .flight-route {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            overflow: auto;
+        }
+
+        .flight-route h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .airline-info {
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .airline-info:last-child {
+            margin-bottom: 0;
+        }
+
+        .airline-info h3 {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .airline-info p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="flight-info">
+        <div class="flight-route">
+            <h2>东京 → 成都</h2>
+            <div class="airline-info">
+                <h3>川航</h3>
+                <p>时间：17:30-21:55</p>
+                <p>日期：星期二, 星期四, 星期六</p>
+                <p>价格：官网三四千</p>
+            </div>
+        </div>
+
+        <div class="flight-route">
+            <h2>东京 → 广州</h2>
+            <div class="airline-info">
+                <h3>全日空</h3>
+                <p>时间：9:10-13:05</p>
+                <p>日期：每天</p>
+                <p>价格：官网五六千</p>
+            </div>
+            <div class="airline-info">
+                <h3>日航</h3>
+                <p>时间：8:50-12:30</p>
+                <p>日期：每天</p>
+                <p>价格：四五万日元or十几万日元？？</p>
+            </div>
+            <div class="airline-info">
+                <h3>南航</h3>
+                <p>时间：1、15:45-19:45 / 2、8:50-12:30</p>
+                <p>日期：每天</p>
+                <p>价格：1、官网四五千 / 2、共享航班一万五，我猜共享的上面日航</p>
+            </div>
+        </div>
+
+        <div class="flight-route">
+            <h2>东京 → 重庆</h2>
+            <div class="airline-info">
+                <p>目前好像无</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
